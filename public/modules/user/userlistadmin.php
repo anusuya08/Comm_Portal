@@ -53,7 +53,7 @@ if(isset($_POST["sendBulkmail"])){
 			$mail->addAddress($to, "Admin");
 			
 			//Enable SMTP debugging.
-			//$mail->SMTPDebug = 3;
+			$mail->SMTPDebug = 3;
 			//Set PHPMailer to use SMTP.
 			$mail->isSMTP();
 			//Set SMTP host name
