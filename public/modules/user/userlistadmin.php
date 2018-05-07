@@ -37,7 +37,7 @@ if(isset($_REQUEST["submitted"])){
         $formerror="Please fill in the fields";
     }
 }
-
+//commit and push test
 if(isset($_POST["sendBulkmail"])){
     $mailList=$_POST["mailList"];
 	$userIdList=$_POST["userIdList"];
