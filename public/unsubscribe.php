@@ -20,7 +20,7 @@ if(isset($uid )){
 		echo '<meta http-equiv="Refresh" content="1; url=home.php">';
 		//header("Location:home.php");
 	}else{
-		$formerror="Invalid User";
+		$formerror="not a valid User";
 	}
 }
 ?>
