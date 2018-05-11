@@ -37,7 +37,7 @@ if(isset($_REQUEST["submitted"])){
         $formerror="Please fill in the fields";
     }
 }
-
+//commit and push test
 if(isset($_POST["sendBulkmail"])){
     $mailList=$_POST["mailList"];
 	$userIdList=$_POST["userIdList"];
@@ -53,7 +53,7 @@ if(isset($_POST["sendBulkmail"])){
 			$mail->addAddress($to, "Admin");
 			
 			//Enable SMTP debugging.
-			//$mail->SMTPDebug = 3;
+			$mail->SMTPDebug = 3;
 			//Set PHPMailer to use SMTP.
 			$mail->isSMTP();
 			//Set SMTP host name
