@@ -39,7 +39,6 @@ class UserManagerDB
     public static function getUserByEmail($email){
         $user=NULL;
         $conn=DBUtil::getConnection();
-        $email=mysqli_real_escape_string($conn,$email);
         $sql="select * from tb_user where email='$email'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
