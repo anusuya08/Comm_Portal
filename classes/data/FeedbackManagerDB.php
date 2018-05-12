@@ -15,6 +15,7 @@ class FeedbackManagerDB
         $feedback->comments=$row["comments"];
         return $feedback;
     }
+    //getFeedbackByEmail
     public static function getFeedbackByEmail($email){
         $feedback=NULL;
         $conn=DBUtil::getConnection();
